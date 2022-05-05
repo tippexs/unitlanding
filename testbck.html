@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NGINX Unit</title>
+    <meta name="description"
+          content="NGINX Unit">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap-grid.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="moving-clouds" style="background-image: url('img/clouds.webp'); "></div>
+        <div class="title">
+            Does managing your application stack feel like a mission to Mars?
+            <div style="font-size: 1.5rem; margin-top: 3rem;">When it comes to the size of your app stack,
+                <b>less
+                    is more</b></div>
+            <div id="hero-logo">
+                <img src="img/logo.svg"/>
+            </div>
+            <div style="font-size: 1.5rem; margin-top: 3rem;">An NGINX Project</div>
+            <!--                @todo: hide on scroll! -->
+            <div class="mouse_scroll" style="padding-top: 3.5rem;">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+
+
+    <div id="group2" class="parallax__group2">
+        <div class="stars"></div>
+        <div class="parallax__layer parallax__layer--base">
+            <div class="content-container">
+                <div style="margin-bottom: 5rem;">
+                    <h1>Universal Web App Server</h1>
+                    <h2 class="caption">Build and deploy cloud-native applications without adding layers to your
+                        tech
+                        stack</h2>
+                </div>
+                <div class="line">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="codeline">"listeners": {</p>
+                            <p class="codeline">&nbsp;"*:443": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"pass": "routes"</p>
+                            <p class="codeline">&nbsp;},</p>
+                            <p class="codeline">&nbsp;"*:8081": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"pass": "application/blogs"</p>
+                            <p class="codeline">&nbsp;},</p>
+                            <p class="codeline">}</p>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Production grade HTTP Interface</h2>
+                        <p>High performance, open source HTTP engine written by the original NGINX
+                            team, and inspired by over a decade of learnings from the world's most popular web
+                            server.</p>
+                    </div>
+                </div>
+                <div class="line reverse">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="codeline">"applications": {</p>
+                            <p class="codeline">&nbsp;"blogs": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"type": "php",</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"targets": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"direct": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"root": "/www/blogs/"</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;}</p>
+                            <p class="codeline">&nbsp;&nbsp;},</p>
+                            <p class="codeline">&nbsp;},</p>
+                            <p class="codeline">&nbsp;"login": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"type": "python",</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"path": "/www/login",</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"module": "oauth",</p>
+                            <p class="codeline">&nbsp;&nbsp;},</p>
+                            <p class="codeline">}</p>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Runs application code</h2>
+                        <p>Natively run applications in seven different languages. Control your entire application
+                            configuration, from the network layer, through to the runtime. Deploy a single
+                            application,
+                            or easily co-locate multiple microservices in a single container.</p>
+                        <p>Applications are independently isolated with cgroups, chrooted environments and
+                            segregated
+                            user accounts.</p>
+                        <p>Unit supports applications written in Java, Go, Node.JS, PHP, Perl, Python & Ruby.0</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="codeline">"routes": [</p>
+                            <p class="codeline">&nbsp;{</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"action": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"share": "/sites/${host}${uri}"</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;}</p>
+                            <p class="codeline">&nbsp;&nbsp;}</p>
+                            <p class="codeline">]</p>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Serves static assets</h2>
+                        <p>A cloud-native web server with simple JSON configuration. To augment server-side code or
+                            deliver complete single page applications.</p>
+                    </div>
+                </div>
+                <div class="line reverse">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="codeline">"upstreams": {</p>
+                            <p class="codeline">&nbsp;"files-backend": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"servers": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"192.168.0.1:80": {},</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"192.168.0.2:80": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"weight": 0.5</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p class="codeline">&nbsp;&nbsp;}</p>
+                            <p class="codeline">}</p>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Proxies to backends</h2>
+                        <p>Some application URIs are served elsewhere. Unit can proxy and load balance to backend
+                            services without the need to deploy a separate reverse proxy.</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="codeline">"certificates": {</p>
+                            <p class="codeline">&nbsp;"bundle": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"key": "RSA (4096 bits)",</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;"chain": [</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"subject": {</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"common_name":
+                                "example.com",</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"issuer": {...},</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"validity": {...},</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p class="codeline">&nbsp;&nbsp;&nbsp;]</p>
+                            <p class="codeline">&nbsp;&nbsp;}</p>
+                            <p class="codeline">}</p>
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>True end-to-end SSL/TLS</h2>
+                        <p>Terminate TLS connections within the same daemon as that is running the application code
+                            to ensure no plaintext is passed across network interfaces. Without any changes to
+                            application.</p>
+                        <p>Unit automatically matches TLS certificates to incoming requests, removing the effort of
+                            painstakingly associating private keys and certificates with virtual servers.</p>
+                    </div>
+                </div>
+                <div class="line reverse">
+                    <div class="img">
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <!--                            @todo: Write JavaScript to fill it from predefined json-->
+                            <p class="cmdline">$ curl -X PUT --data-binary</p>
+                            <p class="cmdline">@unitconf.json localhost:8080/config</p>
+                            <p class="cmdline">{</p>
+                            <p class="cmdline">&nbsp;"success": "Reconfiguration done."</p>
+                            <p class="cmdline">}</p>
+                            <p class="line4">><span class="cursor4">_</span></p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Fully dynamic reconfiguration</h2>
+                        <p>Change one part of Unit's configuration, or replace it entirely, with a single HTTP
+                            request. Everything is controlled with a simple JSON/REST interface, and all changes are
+                            immediately applied without disrupting in-flight requests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+            <div class="parallax_uniter">
+                <img src="/img/Uniter.png">
+            </div>
+        </div>
+    </div>
+    <div id="group3" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="stars"></div>
+            <!--            @todo: Change to flex -->
+            <div class="content-container">
+                <div style="margin-bottom: 5rem;">
+                    <h1>Explore</h1>
+                    <h2 class="caption">Unit's Architecture and Main Components</h2>
+                    <p>Unit is written in pure C with minimum external dependencies and puts a focus on performance,
+                        low latency, and scalability. We utilize a complex, asynchronous, multithreading
+                        architecture comprising multiple processes to achieve security and robustness while getting
+                        the most out of modern compute platforms. We minimize syscalls and use lock-free queues over
+                        shared-memory IPC to communicate with application processes with almost zero overhead. </p>
+                </div>
+                <div>
+                    <img src="img/unitarch.png" alt="" width="60%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="group7" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="stars-20"></div>
+            <div class="content-container" style="justify-content: space-between; height: 95%;">
+                <div style="margin-bottom: 5rem;">
+                    <h1>Ready for take-off?</h1>
+                    <h2 class="caption">Select your Mission</h2>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 2rem;">
+                        <div class="flight-tile">
+                            <h4>Unit as a Webserver</h4>
+                            <p>You simply want to share a static html file or a complex Website build with a
+                                JavaScript
+                                Framework like ReactJS, Angular or Vue? This is the right flight for you.</p>
+                            <a href="">Launch Mission</a>
+                        </div>
+                        <div class="flight-tile">
+                            <h4>Unit as Appserver</h4>
+                            <p>Efficient Application Management is your most important use case? Are you exited to
+                                learn
+                                more about a Unit for your PHP, Python or Java Application? Take a seat and enjoy
+                                the
+                                journey to the App-Galaxy and its 7 Lanagets</p>
+                            <a href="">Launch Mission</a>
+                        </div>
+                        <div class="flight-tile">
+                            <h4>Unit Security</h4>
+                            <p>"Managing Application Runtime Isolation without Docker is complex and hard to
+                                maintain!"
+                                If this sounds like a true statement to you, join us on our Adventure down the
+                                chroot,
+                                chown and namesapces trail to cgroup-mountain.</p>
+                            <a href="">Launch Mission</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div>
+                        <span>(c) 2017 - 2022 NGINX Inc.</span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Terms of Service</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Github</li>
+                            <li>Docs</li>
+                            <li>Mailinglist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
