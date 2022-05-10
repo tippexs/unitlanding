@@ -34,16 +34,15 @@
         <div id="nxt-hero" class="col-md-12 col-sm-12">
             <div class="row" style="flex-grow: 1; color: white; margin-top: 1rem; margin-left: 1rem;">
                 <!-- Image and text -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="align-items: flex-start">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="align-items: flex-start; align-content: flex-start;">
                     <a class="navbar-brand" href="#">
                         <img src="img/logo.svg" alt="" width="120">
                         An NGINX Project
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="https://unit.nginx.org/installation/">Docs</a>
@@ -325,12 +324,12 @@
                    <h2>Ready to launch?</h2>
                     <h3>NGINX Unit is open source! Join the community on our <a href="#">Slack</a>, <a href="https://unit.nginx.org/installation/">Github</a> or  <a href="#">mailing list</a></h3>
 
-                    <a href="https://unit.nginx.org/installation/">Install NGINX Unit</a>
+                    <a href="https://unit.nginx.org/installation/" class="btn btn-light">Install NGINX Unit</a>
                 </div>
                 <div class="col-sm-6">
                     (c) 2022 NGINX Inc.
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 footer-nav">
                     <ul>
                         <li>
                             <a href="https://unit.nginx.org/installation/">Docs</a>
@@ -345,4 +344,5 @@
     </div>
 </div>
 </body>
+<script src="/js/bootstrap.bundle.min.js"></script>
 </html>

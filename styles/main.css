@@ -598,3 +598,21 @@ h1.hero {
 a {
     color: red;
 }
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-nav ul li {
+  list-style: none;
+
+}
+
+.footer-nav ul li a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: rgb(255 255 255 / 55%);
+    text-decoration: none;
+}
