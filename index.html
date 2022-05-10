@@ -1,116 +1,348 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
-
-        .bgimg-1, .bgimg-2, .bgimg-3 {
-            position: relative;
-            opacity: 0.65;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-        .bgimg-1 {
-            background-image: url("img/1st.jpg");
-            min-height: 100%;
-        }
-
-        .bgimg-2 {
-            background-image: url("img/2.jpg");
-            min-height: 400px;
-        }
-
-        .bgimg-3 {
-            background-image: url("img/3.jpg");
-            min-height: 800px;
-            background-position: bottom;
-        }
-
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
-
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-
-        h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
-
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-            .bgimg-1, .bgimg-2, .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>NGINX Unit</title>
+    <meta name="description"
+          content="NGINX Unit">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = "//jarjarbinks.cloud/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
 
-<div class="bgimg-1">
-    <div class="caption">
-        <span class="border">SCROLL DOWN</span>
+<div class="container-fluid">
+    <!--    <div class="moving-clouds" style="background-image: url('img/clouds.webp'); "></div>-->
+    <div class="row" style="background-color: transparent">
+        <div id="nxt-hero" class="col-md-12 col-sm-12">
+            <div class="row" style="flex-grow: 1; color: white; margin-top: 1rem; margin-left: 1rem;">
+                <!-- Image and text -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="align-items: flex-start">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.svg" alt="" width="120">
+                        An NGINX Project
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://unit.nginx.org/installation/">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://unit.nginx.org/installation/">Github</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--            <div class="moving-clouds"></div>-->
+            <h1 class="hero">Does managing your application stack feel like a mission to Mars?</h1>
+            <h2 class="p-4">When it comes to the size of your app stack, less is more</h2>
+            <div id="hero-logo">
+                <img class="" src="img/logo.svg"/>
+            </div>
+            <div style="font-size: 1.5rem; color: white; padding: 1rem 0;">An NGINX Project</div>
+            <div class="mouse_scroll">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<div class="container">
+    <div class="row group2">
+        <div class="stars"></div>
+        <div class="col-md-12 col-sm-12">
+            <h2 class="text-center p-4">Build and deploy cloud-native applications without overcomplicating your tech
+                stack</h2>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3>Simplify Your Microservices</h3>
+            <p>When building web applications, we typically build out a stack of reverse proxies, web servers, and
+                application servers. NGINX Unit puts everything you need to build cloud-native applications in a single
+                server component.</p>
+            <p>Overcome the antipattern of co-locating microservices in a single container because Unit has a single
+                daemon that manages multiple applications.</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3>Modernize Your Monolith</h3>
+            <p>A cloud-native monolith might sound like an oxymoron, but it isn’t!</p>
+            <p>Unit brings RESTful configuration, a container-friendly footprint, and modern TLS implementation to
+                traditional apps. </p>
+            <p>Modernize your enterprise Java apps with NGINX Unit.</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3>Secure Your Application Runtime</h3>
+            <p>Delivering true end-to-end TLS requires certificate management at the application runtime. Unit makes it
+                easier to manage TLS certificates, decoupling them from the application without exposing the
+                plaintext.</p>
+            <p>Bring cgroup isolation, chrooted environments and separate runusers to your applications even if you’re
+                not using containers.</p>
+        </div>
+    </div>
+    <!--    Main Content Section-->
+    <div class="row group2">
+        <div class="stars"></div>
+        <div class="col-sm-12">
+            <h2>Application control, from L4 into user space!</h2>
+        </div>
+        <div class="row m-reverse">
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class=fakeMenu>
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen">
+                        <p class="codeline">"listeners": {</p>
+                        <p class="codeline">&nbsp;"*:443": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"pass": "routes"</p>
+                        <p class="codeline">&nbsp;},</p>
+                        <p class="codeline">&nbsp;"*:8081": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"pass": "application/blogs"</p>
+                        <p class="codeline">&nbsp;},</p>
+                        <p class="codeline">}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12"><h2>Production grade HTTP Interface</h2>
+                <p>High performance, open source HTTP engine written by the original NGINX
+                    team, and inspired by over a decade of learnings from the world's most popular web
+                    server.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Runs application code</h2>
+                <p>Natively run applications in seven different languages. Control your entire application
+                    configuration, from the network layer, through to the runtime. Deploy a single
+                    application,
+                    or easily co-locate multiple microservices in a single container.</p>
+                <p>Applications are independently isolated with cgroups, chrooted environments and
+                    segregated
+                    user accounts.</p>
+                <p>Unit supports applications written in Java, Go, Node.JS, PHP, Perl, Python & Ruby.</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class="fakeMenu right">
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen right">
+                        <p class="codeline">"applications": {</p>
+                        <p class="codeline">&nbsp;"blogs": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"type": "php",</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"targets": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"direct": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"root": "/www/blogs/"</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;}</p>
+                        <p class="codeline">&nbsp;&nbsp;},</p>
+                        <p class="codeline">&nbsp;},</p>
+                        <p class="codeline">&nbsp;"login": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"type": "python",</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"path": "/www/login",</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"module": "oauth",</p>
+                        <p class="codeline">&nbsp;&nbsp;},</p>
+                        <p class="codeline">}</p>
 
-<!--<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">-->
-<!--    <h3 style="text-align:center;">Parallax Demo</h3>-->
-<!--    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>-->
-<!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-reverse">
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class=fakeMenu>
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen">
+                        <p class="codeline">"routes": [</p>
+                        <p class="codeline">&nbsp;{</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"action": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"share": "/sites/${host}${uri}"</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;}</p>
+                        <p class="codeline">&nbsp;&nbsp;}</p>
+                        <p class="codeline">]</p>
 
-<div class="bgimg-2">
-    <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2>Serves static assets</h2>
+                <p>A cloud-native web server with simple JSON configuration. To augment server-side code or
+                    deliver complete single page applications.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Proxies to backends</h2>
+                <p>Some application URIs are served elsewhere. Unit can proxy and load balance to backend
+                    services without the need to deploy a separate reverse proxy.</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class=fakeMenu>
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen">
+                        <p class="codeline">"upstreams": {</p>
+                        <p class="codeline">&nbsp;"files-backend": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"servers": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"192.168.0.1:80": {},</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;"192.168.0.2:80": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"weight": 0.5</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                        <p class="codeline">&nbsp;&nbsp;}</p>
+                        <p class="codeline">}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-reverse">
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class=fakeMenu>
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen">
+                        <p class="codeline">"certificates": {</p>
+                        <p class="codeline">&nbsp;"bundle": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"key": "RSA (4096 bits)",</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;"chain": [</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"subject": {</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"common_name":
+                            "example.com",</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"issuer": {...},</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"validity": {...},</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                        <p class="codeline">&nbsp;&nbsp;&nbsp;]</p>
+                        <p class="codeline">&nbsp;&nbsp;}</p>
+                        <p class="codeline">}</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2>True end-to-end SSL/TLS</h2>
+                <p>Terminate TLS connections within the same daemon as that is running the application code
+                    to ensure no plaintext is passed across network interfaces. Without any changes to
+                    application.</p>
+                <p>Unit automatically matches TLS certificates to incoming requests, removing the effort of
+                    painstakingly associating private keys and certificates with virtual servers.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Fully dynamic reconfiguration</h2>
+                <p>Change one part of Unit's configuration, or replace it entirely, with a single HTTP
+                    request. Everything is controlled with a simple JSON/REST interface, and all changes are
+                    immediately applied without disrupting in-flight requests.</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="img">
+                    <div class=fakeMenu>
+                        <div class="fakeButtons fakeClose"></div>
+                        <div class="fakeButtons fakeMinimize"></div>
+                        <div class="fakeButtons fakeZoom"></div>
+                    </div>
+                    <div class="fakeScreen">
+                        <p class="cmdline">$ curl -X PUT --data-binary</p>
+                        <p class="cmdline">@unitconf.json localhost:8080/config</p>
+                        <p class="cmdline">{</p>
+                        <p class="cmdline">&nbsp;"success": "Reconfiguration done."</p>
+                        <p class="cmdline">}</p>
+                        <p class="line4">$<span class="cursor4">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="group3">
+        <div class="stars"></div>
+        <div class="col-md-12 col-sm-12">
+            <h2>Explore</h2>
+            <h4>Unit's Architecture and Main Components</h4>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <img src="img/unitarch.png" style="width: 95%;">
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <p>Unit is written in pure C with minimum external dependencies and puts a focus on performance, low
+                latency, and scalability. We utilize a complex, asynchronous, multithreading architecture comprising
+                multiple processes to achieve security and robustness while getting the most out of modern computing
+                platforms. We minimize syscalls and use lock-free queues over shared-memory IPC to communicate with
+                application processes with almost zero overhead.</p>
+        </div>
+    </div>
+    <!--    Footer Spaceshuttle Section-->
+</div>
+
+<div class="container-fluid" style="padding: 0;">
+    <div id="footer" style="color: white; padding-top: 2rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                   <h2>Ready to launch?</h2>
+                    <h3>NGINX Unit is open source! Join the community on our <a href="#">Slack</a>, <a href="https://unit.nginx.org/installation/">Github</a> or  <a href="#">mailing list</a></h3>
+
+                    <a href="https://unit.nginx.org/installation/">Install NGINX Unit</a>
+                </div>
+                <div class="col-sm-6">
+                    (c) 2022 NGINX Inc.
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>
+                            <a href="https://unit.nginx.org/installation/">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://unit.nginx.org/installation/">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<div style="position:relative;">
-<!--    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">-->
-<!--        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>-->
-<!--    </div>-->
-</div>
-
-<div class="bgimg-3">
-<!--    <div class="caption">-->
-<!--        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>-->
-<!--    </div>-->
-</div>
-
-<div style="position:relative;">
-<!--    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">-->
-<!--        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>-->
-<!--    </div>-->
-</div>
-
-<!--<div class="bgimg-1">-->
-<!--    <div class="caption">-->
-<!--        <span class="border">COOL!</span>-->
-<!--    </div>-->
-<!--</div>-->
-
 </body>
 </html>
